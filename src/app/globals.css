@@ -2192,8 +2192,8 @@ textarea:focus {
   }
 
   .hero {
-    min-height: max(850px, calc(100dvh - 58px));
-    padding: 26px 5vw 27px;
+    min-height: max(640px, calc(100svh - 58px));
+    padding: 26px 5vw 24px;
   }
 
   .hero-topline {
@@ -2203,7 +2203,7 @@ textarea:focus {
 
   .hero h1 {
     font-size: 12.4vw;
-    margin-top: 59px;
+    margin-top: 30px;
     line-height: 1;
     z-index: 4;
   }
@@ -2213,25 +2213,28 @@ textarea:focus {
     height: 20px;
   }
 
+  /* Art stretches between the headline and the bottom copy so the hero
+     always fills exactly one screen, whatever the phone's height. */
   .hero-art {
-    inset: 155px -7% auto auto;
-    width: 85%;
-    height: 390px;
+    inset: 175px 0 215px 0;
+    width: 100%;
+    height: auto;
   }
 
   .hero-art img {
-    object-position: 40% 30%;
-    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 12%, black 75%, transparent 100%);
-    mask-image: linear-gradient(to bottom, transparent 0%, black 12%, black 75%, transparent 100%);
+    object-position: 62% 30%;
+    -webkit-mask-image: linear-gradient(to bottom, transparent 0%, black 6%, black 88%, transparent 100%);
+    mask-image: linear-gradient(to bottom, transparent 0%, black 6%, black 88%, transparent 100%);
   }
 
   .hero-sticker {
     width: 85px;
     height: 85px;
     font-size: 8px;
-    top: 333px;
-    right: auto;
-    left: 5vw;
+    top: 200px;
+    bottom: auto;
+    right: 5vw;
+    left: auto;
     transform: rotate(-12deg);
   }
 
@@ -2243,12 +2246,18 @@ textarea:focus {
   .hero-spark {
     width: 40px;
     height: 40px;
-    right: 40px;
-    bottom: 65px;
+    right: 24px;
+    bottom: 30px;
   }
 
   .hero-bottom {
-    margin-top: 335px;
+    margin-top: auto;
+    padding-top: 220px;
+  }
+
+  .scroll-link {
+    margin-top: 0;
+    padding-top: 22px;
   }
 
   .hero-copy {
